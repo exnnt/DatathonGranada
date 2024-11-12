@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test1</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>Titulo</h1>
+    <form id="quizForm">
+        <div class="question-box" id="q1-box">
+            <p>1. ¿Cuál es la capital de España?</p>
+            <label><input type="radio" name="q1" value="0"> Barcelona</label><br>
+            <label><input type="radio" name="q1" value="1"> Madrid</label><br>
+            <label><input type="radio" name="q1" value="0"> Sevilla</label><br>
+            <label><input type="radio" name="q1" value="0"> Valencia</label><br>
+            <p class="explanation" id="q1-explanation">La capital de España es Madrid.</p>
+        </div>
+        
+        <div class="question-box" id="q2-box">
+            <p>2. ¿Cuál es el idioma oficial de Brasil?</p>
+            <label><input type="radio" name="q2" value="0"> Inglés</label><br>
+            <label><input type="radio" name="q2" value="0"> Español</label><br>
+            <label><input type="radio" name="q2" value="1"> Portugués</label><br>
+            <label><input type="radio" name="q2" value="0"> Francés</label><br>
+            <p class="explanation" id="q2-explanation">El idioma oficial de Brasil es el portugués.</p>
+        </div>
+        
+        <div class="question-box" id="q3-box">
+            <p>3. ¿Cuál es el planeta más cercano al sol?</p>
+            <label><input type="radio" name="q3" value="1"> Mercurio</label><br>
+            <label><input type="radio" name="q3" value="0"> Venus</label><br>
+            <label><input type="radio" name="q3" value="0"> Tierra</label><br>
+            <label><input type="radio" name="q3" value="0"> Marte</label><br>
+            <p class="explanation" id="q3-explanation">Mercurio es el planeta más cercano al sol.</p>
+        </div>
+
+        <button type="button" id="sendButton" onclick="calculateScore()">Enviar</button>
+        <button type="button" id="exitButton" style="display: none;" onclick="exitQuiz()">Salir</button>
+    </form>
+
+    <p class="result" id="result"></p>
+
+    <script src="/js/scripts.js"></script>
+</body>
+</html>
