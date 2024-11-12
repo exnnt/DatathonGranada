@@ -44,5 +44,5 @@ function calculateScore() {
 }
 
 function exitQuiz() {
-    window.location.href = '/html/main.html'; 
+    window.location.href = '/index.html'; 
 }
