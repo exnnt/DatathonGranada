@@ -9,38 +9,69 @@
 <body>
     <h1>Titulo</h1>
     <form id="quizForm">
+        <!-- Question 1 -->
         <div class="question-box" id="q1-box">
-            <p>1. ¿Cuál es la capital de España?</p>
-            <label><input type="radio" name="q1" value="0"> Barcelona</label><br>
-            <label><input type="radio" name="q1" value="1"> Madrid</label><br>
-            <label><input type="radio" name="q1" value="0"> Sevilla</label><br>
-            <label><input type="radio" name="q1" value="0"> Valencia</label><br>
-            <p class="explanation" id="q1-explanation">La capital de España es Madrid.</p>
+            <p>1. ¿Qué es un contrato de trabajo?</p>
+            <label><input type="radio" name="q1" value="0">Un acuerdo informal entre un trabajador y su jefe.</label><br>
+            <label><input type="radio" name="q1" value="1">Un documento legal que establece las condiciones laborales entre empleador y trabajador.</label><br>
+            <label><input type="radio" name="q1" value="0">Un tipo de acuerdo verbal sin efectos legales.</label><br>
+            <p class="explanation" id="q1-explanation">Un contrato es un documento legal que establece las condiciones laborales entre el empleado y el trabajador.</p>
+            <button type="button" class="erase-button" onclick="eraseSelection('q1')">Borrar Selección</button>
         </div>
         
+        <!-- Question 2 -->
         <div class="question-box" id="q2-box">
-            <p>2. ¿Cuál es el idioma oficial de Brasil?</p>
-            <label><input type="radio" name="q2" value="0"> Inglés</label><br>
-            <label><input type="radio" name="q2" value="0"> Español</label><br>
-            <label><input type="radio" name="q2" value="1"> Portugués</label><br>
-            <label><input type="radio" name="q2" value="0"> Francés</label><br>
-            <p class="explanation" id="q2-explanation">El idioma oficial de Brasil es el portugués.</p>
+            <p>2. ¿Qué debe hacer un trabajador si no le pagan el salario acordado?</p>
+            <label><input type="radio" name="q2" value="0">Esperar a que el empleador lo pague más tarde.</label><br>
+            <label><input type="radio" name="q2" value="1">Denunciarlo ante la Inspección de Trabajo o reclamarlo judicialmente.</label><br>
+            <label><input type="radio" name="q2" value="0">Renunciar al trabajo.</label><br>
+            <p class="explanation" id="q2-explanation">Un trabajador debe denunciarlo o reclamar judicialmente.</p>
+            <button type="button" class="erase-button" onclick="eraseSelection('q2')">Borrar Selección</button>
         </div>
         
+        <!-- Question 3 -->
         <div class="question-box" id="q3-box">
-            <p>3. ¿Cuál es el planeta más cercano al sol?</p>
-            <label><input type="radio" name="q3" value="1"> Mercurio</label><br>
-            <label><input type="radio" name="q3" value="0"> Venus</label><br>
-            <label><input type="radio" name="q3" value="0"> Tierra</label><br>
-            <label><input type="radio" name="q3" value="0"> Marte</label><br>
-            <p class="explanation" id="q3-explanation">Mercurio es el planeta más cercano al sol.</p>
+            <p>3. ¿Cuál de los siguientes es un derecho fundamental de los trabajadores?</p>
+            <label><input type="radio" name="q3" value="0">Trabajar sin descansar durante toda la jornada.</label><br>
+            <label><input type="radio" name="q3" value="1">Derecho a la seguridad y salud en el trabajo.</label><br>
+            <label><input type="radio" name="q3" value="0">Derecho a cambiar de trabajo cada semana.</label><br>
+            <p class="explanation" id="q3-explanation">Todos los trabajadores tienen derecho a la seguridad y a la salud en el trabajo.</p>
+            <button type="button" class="erase-button" onclick="eraseSelection('q3')">Borrar Selección</button>
         </div>
 
-        <button type="button" id="sendButton" onclick="calculateScore()">Enviar</button>
-        <button type="button" id="exitButton" style="display: none;" onclick="exitQuiz()">Salir</button>
-    </form>
+        <!-- Question 4 -->
+        <div class="question-box" id="q4-box">
+            <p>4. En una entrevista de trabajo, ¿cuál de las siguientes preguntas NO es legal?</p>
+            <label><input type="radio" name="q4" value="0">¿Cuál es tu experiencia laboral previa?</label><br>
+            <label><input type="radio" name="q4" value="1">¿Estás casado/a o piensas tener hijos pronto?</label><br>
+            <label><input type="radio" name="q4" value="0">¿Por qué te interesa este puesto?</label><br>
+            <label><input type="radio" name="q4" value="0">¿Qué formación académica tienes?</label><br>
+            <p class="explanation" id="q4-explanation">No te pueden preguntar en una entrevista de trabajo si estás casado o si planeas tener hijos.</p>
+            <button type="button" class="erase-button" onclick="eraseSelection('q4')">Borrar Selección</button>
+        </div>
 
-    <p class="result" id="result"></p>
+        <!-- Question 5 -->
+        <div class="question-box" id="q5-box">
+            <p>5. ¿Cuál es el periodo mínimo de preaviso para renunciar a un trabajo, según la normativa estándar?</p>
+            <label><input type="radio" name="q5" value="0">7 días.</label><br>
+            <label><input type="radio" name="q5" value="1">15 días naturales.</label><br>
+            <label><input type="radio" name="q5" value="0">1 mes exacto.</label><br>
+            <label><input type="radio" name="q5" value="0">No se requiere preaviso.</label><br>
+            <p class="explanation" id="q5-explanation">El periodo mínimo de preaviso para renunciar a un trabajo son 15 días naturales.</p>
+            <button type="button" class="erase-button" onclick="eraseSelection('q5')">Borrar Selección</button>
+        </div>
+
+        <!-- Result Section (Placed above the send button) -->
+        <div class="result" id="result">
+            <p></p>
+        </div>
+
+        <!-- Submit and exit buttons placed below the result -->
+        <div class="button-container">
+            <button type="button" id="sendButton" onclick="calculateScore()">Enviar</button>
+            <button type="button" id="exitButton" style="display: none;" onclick="exitQuiz()">Salir</button>
+        </div>
+    </form>
 
     <script src="../js/scripts.js"></script>
 </body>

@@ -1,141 +1,271 @@
+/* Global styles */
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
-}
-
-.question-box {
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-
-.result {
-    font-weight: bold;
-    font-size: 1.2em;
-    color: green;
-    margin-top: 20px;
-}
-
-.explanation {
-    margin-top: 10px;
-    color: #555;
-    display: none;
-}
-
-.correct {
-    color: green;
-}
-
-.incorrect {
-    color: red;
-}
-
-.unanswered {
-    color: orange;
-}
-* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
     line-height: 1.6;
     color: #333;
+    background-color: #FFFFFF; /* White background */
 }
 
+h1, h2, h3 {
+    font-weight: bold;
+    color: #0033CC; /* Dark blue for headings */
+}
+
+p {
+    font-size: 1.1rem;
+    color: #333333; /* Dark gray for text */
+}
+
+/* Header */
 header {
-    background-color: #333;
+    background-color: #0033CC; /* Dark blue */
+    color: #FFFFFF; /* White text */
     padding: 1rem 2rem;
-}
-
-.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-.logo {
-    font-size: 1.5rem;
+.navbar .logo {
+    font-size: 1.8rem;
     font-weight: bold;
-    color: #fff;
+    color: #FFFFFF; /* White */
 }
 
 .nav-links {
+    display: flex;
     list-style: none;
-}
-
-.nav-links li {
-    display: inline;
-    margin-left: 1.5rem;
+    gap: 2rem;
+    margin: 0;
 }
 
 .nav-links a {
-    color: #fff;
+    color: #FFFFFF; /* White links */
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #ff9800;
+    color: #FF0000; /* Red on hover */
 }
 
+/* Hero section */
 .hero {
-    background: url('hero-image.jpg') center/cover no-repeat;
-    color: white;
+    background-color: #333333; /* Dark gray */
+    color: #FFFFFF;
     text-align: center;
-    padding: 5rem 2rem;
-    background-color: #444;
+    padding: 3rem 2rem; /* Reduced padding */
+    margin-top: 80px; /* Adjusted for fixed header */
 }
 
 .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: #FFFFFF; /* White text for hero heading */
 }
 
 .hero p {
     font-size: 1.2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    color: #FFFFFF; 
 }
 
 .cta-button {
+    background-color: #FF0000; /* Red button */
+    color: #FFFFFF;
     padding: 0.8rem 1.5rem;
-    background-color: #ff9800;
-    color: #fff;
+    border-radius: 10px;
+    font-size: 1rem;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
 .cta-button:hover {
-    background-color: #e67e00;
+    background-color: #CC0000; /* Darker red */
 }
 
+/* Section styles */
 .section {
     padding: 4rem 2rem;
+    background-color: #F4F4F4; /* Light gray */
     text-align: center;
-    background-color: #f4f4f4;
 }
 
 .section h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
+    color: #0033CC; /* Dark blue */
 }
 
 .section p {
     font-size: 1.1rem;
-    max-width: 600px;
-    margin: auto;
+    color: #333333;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
+/* FAQ items */
+.faq-item h3 {
+    font-size: 1.5rem;
+    color: #0033CC; /* Dark blue */
+    margin-bottom: 0.5rem;
+}
+
+.faq-item p {
+    font-size: 1rem;
+    color: #555555; /* Medium gray */
+}
+
+/* Contact form */
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input, textarea {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #0033CC; /* Dark blue button */
+    color: #FFFFFF;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #002299; /* Darker blue */
+}
+
+/* Footer */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #0033CC;
+    color: #FFFFFF;
     text-align: center;
-    padding: 1rem 0;
+    padding: 1rem;
     font-size: 0.9rem;
+}
+
+
+
+
+/* New styles inspired by the poster */
+.section-highlight {
+    background-color: #0033CC; /* Dark blue */
+    color: #FFFFFF; /* White text */
+    padding: 4rem 2rem;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.section-highlight h2 {
+    color: #FFFFFF;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.section-highlight p {
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    margin-bottom: 2rem;
+}
+
+.highlight-button {
+    background-color: #FF0000; /* Red button */
+    color: #FFFFFF;
+    padding: 0.8rem 1.5rem;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.highlight-button:hover {
+    background-color: #CC0000; /* Darker red */
+}
+
+.circle-highlight {
+    border: 2px solid #0033CC; /* Dark blue border */
+    color: #0033CC;
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 50%;
+    text-align: center;
+    margin: 1rem;
+}
+
+.circle-highlight:hover {
+    background-color: #0033CC;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.explanation {
+    display: none;
+    color: #006400; /* Green color for correct answer explanations */
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+
+
+/* Style for the radio button answer feedback (green or red) */
+.correct {
+   color: #006400;
+}
+
+.incorrect {
+    color: #FF0000;
+}
+
+.unanswered {
+   color: #9494008f; /* Yellow for unanswered */
+}
+
+.erase-button {
+    color: cyan;
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.erase-button:hover {
+    color: #FFCC00;
+}
+
+#sendButton.clicked {
+    background-color: #808080; /* Grey out the button */
+    color: black;
+    cursor: not-allowed;
+}
+
+
+/* Adjust send button to be aligned correctly after the result */
+#sendButton {
+    display: block;
+    width: 100%; /* Ensure it takes up the full width (for alignment) */
+    margin-top: 1rem; /* Add spacing from score */
 }
