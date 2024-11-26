@@ -64,3 +64,13 @@ function eraseSelection(questionId) {
 function exitQuiz() {
     window.location.href = '../index.html'; 
 }
+function submitForm() {
+      // Select all input and textarea elements
+      const inputs = document.querySelectorAll('input[type="text"], input[type="email"], textarea');
+            
+      // Loop through all selected inputs and clear their values
+      inputs.forEach(input => {
+          input.value = ''; // Reset the value of the input/textarea
+      });
+    
+}
