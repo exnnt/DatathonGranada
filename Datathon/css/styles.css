@@ -1,11 +1,22 @@
 /* Global styles */
 body {
+/*    background-image: url('istockphoto-1443245439-612x612.jpg'); 
+    background-attachment: fixed; Mantiene la imagen fija mientras se desplaza el contenido 
+    background-size: cover;  La imagen cubre toda la pantalla 
+    background-position: center center;  Centra la imagen 
+    background-repeat: no-repeat;  */
+    margin: 0;
+    height: 100%;
+    color: #fff; /* Asegura que el texto sea visible sobre el fondo */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     color: #333;
-    background-color: #FFFFFF; /* White background */
+    
+}
+header, main, div, section {
+    background: none; /* Ensure the divs have no solid background */
 }
 
 h1, h2, h3 {
@@ -255,19 +266,56 @@ button:hover {
     color: #FFCC00;
 }
 
+.button-container {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    align-items: center; /* Center buttons vertically */
+    gap: 10px; /* Space between buttons */
+    margin-top: 20px; /* Space above the buttons */
+}
+
+/* Style for the Send button */
+#sendButton {
+    display: inline-flex;
+    width: 50%; /* Adjust width as needed */
+    padding: 10px;
+    background-color: #0033CC; /* Blue background for the send button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+
+
 #sendButton.clicked {
     background-color: #808080; /* Grey out the button */
     color: black;
     cursor: not-allowed;
 }
 
-
-/* Adjust send button to be aligned correctly after the result */
-#sendButton {
-    display: block;
-    width: 100%; /* Ensure it takes up the full width (for alignment) */
-    margin-top: 1rem; /* Add spacing from score */
+/* Style for the Exit button */
+#exitButton {
+    display: inline-flex;
+    width: 50%; /* Same width as the Send button */
+    padding: 10px;
+    background-color: #FF0000; /* Red background for the exit button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+    display: none; /* Hidden by default */
 }
+
+
 html, body {
     height: 100%;
     margin: 0;

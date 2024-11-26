@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <h1>Titulo</h1>
+    <h1>Test 1</h1>
     <form id="quizForm">
-        <!-- Question 1 -->
+       
         <div class="question-box" id="q1-box">
             <p>1. ¿Qué es un contrato de trabajo?</p>
             <label><input type="radio" name="q1" value="0">Un acuerdo informal entre un trabajador y su jefe.</label><br>
@@ -19,7 +19,7 @@
             <button type="button" class="erase-button" onclick="eraseSelection('q1')">Borrar Selección</button>
         </div>
         
-        <!-- Question 2 -->
+      
         <div class="question-box" id="q2-box">
             <p>2. ¿Qué debe hacer un trabajador si no le pagan el salario acordado?</p>
             <label><input type="radio" name="q2" value="0">Esperar a que el empleador lo pague más tarde.</label><br>
@@ -28,8 +28,7 @@
             <p class="explanation" id="q2-explanation">Un trabajador debe denunciarlo o reclamar judicialmente.</p>
             <button type="button" class="erase-button" onclick="eraseSelection('q2')">Borrar Selección</button>
         </div>
-        
-        <!-- Question 3 -->
+    
         <div class="question-box" id="q3-box">
             <p>3. ¿Cuál de los siguientes es un derecho fundamental de los trabajadores?</p>
             <label><input type="radio" name="q3" value="0">Trabajar sin descansar durante toda la jornada.</label><br>
@@ -39,7 +38,7 @@
             <button type="button" class="erase-button" onclick="eraseSelection('q3')">Borrar Selección</button>
         </div>
 
-        <!-- Question 4 -->
+
         <div class="question-box" id="q4-box">
             <p>4. En una entrevista de trabajo, ¿cuál de las siguientes preguntas NO es legal?</p>
             <label><input type="radio" name="q4" value="0">¿Cuál es tu experiencia laboral previa?</label><br>
@@ -50,7 +49,7 @@
             <button type="button" class="erase-button" onclick="eraseSelection('q4')">Borrar Selección</button>
         </div>
 
-        <!-- Question 5 -->
+ 
         <div class="question-box" id="q5-box">
             <p>5. ¿Cuál es el periodo mínimo de preaviso para renunciar a un trabajo, según la normativa estándar?</p>
             <label><input type="radio" name="q5" value="0">7 días.</label><br>
@@ -61,12 +60,12 @@
             <button type="button" class="erase-button" onclick="eraseSelection('q5')">Borrar Selección</button>
         </div>
 
-        <!-- Result Section (Placed above the send button) -->
+      
         <div class="result" id="result">
             <p></p>
         </div>
 
-        <!-- Submit and exit buttons placed below the result -->
+       
         <div class="button-container">
             <button type="button" id="sendButton" onclick="calculateScore()">Enviar</button>
             <button type="button" id="exitButton" style="display: none;" onclick="exitQuiz()">Salir</button>
