@@ -74,3 +74,18 @@ function submitForm() {
       });
     
 }
+function toggleSection(sectionId) {
+    // Get the section content and toggle button
+    const sectionContent = document.querySelector(`#${sectionId} .section-content`);
+    const toggleButton = document.querySelector(`#toggle-${sectionId}`);
+    
+    // Toggle the expanded class
+    if (sectionContent.classList.contains('expanded')) {
+        sectionContent.classList.remove('expanded');
+        toggleButton.textContent = '+'; // Change button text to +
+    } else {
+        sectionContent.classList.add('expanded');
+        toggleButton.textContent = '-'; // Change button text to -
+    }
+}
+

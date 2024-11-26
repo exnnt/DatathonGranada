@@ -274,3 +274,46 @@ footer {
     width: 100%; /* Ensure it takes up the full width (for alignment) */
     margin-top: 1rem; /* Add spacing from score */
 }
+/* General styles for collapsible sections */
+.collapsible-section {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Header styles */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.section-header h2 {
+    margin: 0;
+}
+
+.toggle-button {
+    font-size: 18px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+/* Content styles */
+.section-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    padding: 0 15px;
+}
+
+/* Expanded state for content */
+.section-content.expanded {
+    max-height: 500px; /* Adjust based on content height */
+    padding: 15px;
+}
