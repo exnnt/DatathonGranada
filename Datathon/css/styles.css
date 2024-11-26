@@ -15,9 +15,7 @@ body {
     color: #333;
     
 }
-header, main, div, section {
-    background: none; /* Ensure the divs have no solid background */
-}
+
 
 h1, h2, h3 {
     
@@ -111,13 +109,12 @@ header {
 .cta-button:hover {
     background-color: #CC0000; /* Darker red */
 }
-
-/* Section styles */
 .section {
-    padding: 4rem 2rem;
+    padding: 3rem 2rem 0rem 2rem; /* 4rem top, 2rem right, 2rem bottom, 2rem left */
     background-color: #F4F4F4; /* Light gray */
     text-align: center;
 }
+
 
 .section h2 {
     font-size: 2rem;
