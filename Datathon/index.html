@@ -7,7 +7,7 @@
     <meta name="author" content="Vuelo Directo">
     <title>placeholder</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <script src="/js/scripts.js"></script>
+    <link rel="script" href="./js/scripts.js">
 </head>
 <body>
     <header>
@@ -15,7 +15,7 @@
             <div class="logo">VD</div>
             <ul class="nav-links">
                 <li><a href="#home">Principal</a></li>
-                <li><a href="/html/test1.html">Tests</a></li>
+                <li><a href="/html/menutest.html">Tests</a></li>
                 <li><a href="/html/exp.html">Explicacion (idk temp)</a></li>
                 <li><a href="/html/faq.html">Faq</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -24,62 +24,45 @@
     </header>
 
     <main>
-        <section id="home" class="collapsible-section">
-            <div class="section-header" onclick="toggleSection('home')">
-                <h2>Home</h2>
-                <button id="toggle-home" class="toggle-button">+</button>
-            </div>
-            <div class="section-content">
-                <h1>Proyecto Piloto</h1>
-                <p>Tu primer trabajo no debería ser una sorpresa.</p>
-            </div>
+        <section id="home" class="hero">
+            <h1>Proyecto Piloto</h1>
+            <p>Tu primer trabajo no debería ser una sorpresa.</p>
+                
         </section>
-    
-        <section id="course-format" class="collapsible-section">
-            <div class="section-header" onclick="toggleSection('course-format')">
-                <h2>Course Format</h2>
-                <button id="toggle-course-format" class="toggle-button">+</button>
-            </div>
-            <div class="section-content">
-                <h2>Explicacion corta</h2>
-                <p>Blablablabla</p>
-                <ul>
-                    <li>Duration: 12 weeks, with flexible scheduling options.</li>
-                    <li>Format: Weekly live lectures, recorded sessions, and interactive discussions.</li>
-                    <li>Assessments: Exams, projects, and case analyses.</li>
-                </ul>
-            </div>
+
+            
+        <section id="course-format" class="section">
+            <h2>Explicacion corta</h2>
+            <p>Blablablabla</p>
+            <ul>
+                <li>Duration: 12 weeks, with flexible scheduling options.</li>
+                <li>Format: Weekly live lectures, recorded sessions, and interactive discussions.</li>
+                <li>Assessments: Exams, projects, and case analyses.</li>
+            </ul>
         </section>
+
     
-        <section id="testimonials" class="collapsible-section">
-            <div class="section-header" onclick="toggleSection('testimonials')">
-                <h2>Testimonions estudiantes</h2>
-                <button id="toggle-testimonials" class="toggle-button">+</button>
-            </div>
-            <div class="section-content">
-                <blockquote>
-                    <p>"yoqse lo ponia la pagina por ahi pero lo podemos quitar"</p>
-                    <cite>- Alex Johnson, Past Student</cite>
-                </blockquote>
-            </div>
+       
+        <section id="testimonials" class="section">
+            <h2>Testimonions estudiantes</h2>
+            <blockquote>
+                <p>"yoqse lo ponia la pagina por ahi pero lo podemos quitar"</p>
+                <cite>- Alex Johnson, Past Student</cite>
+            </blockquote>
+            
         </section>
-    
-        <section id="contact" class="collapsible-section">
-            <div class="section-header" onclick="toggleSection('contact')">
-                <h2>Contacto</h2>
-                <button id="toggle-contact" class="toggle-button">+</button>
-            </div>
-            <div class="section-content">
-                <p>Si tienes alguna duda pregunta</p>
-                <p>Email: contacto@datathon.es</p>
-                <p>Telefono: +34 123 456 789</p>
-                <form>
-                    <input type="text" name="name" placeholder="Tu nombre" required>
-                    <input type="email" name="email" placeholder="Tu email" required>
-                    <textarea name="message" placeholder="Mensaje:" required></textarea>
-                    <button type="submit" onclick="submitForm()">Enviar</button>
-                </form>
-            </div>
+          
+        <section id="contact" class="section">
+            <h2>Contacto</h2>
+            <p>Si tienes alguna duda pregunta</p>
+            <p>Email: contacto@datathon.es</p>
+            <p>Telefono: +34 123 456 789</p>
+            <form>
+                <input type="text" name="name" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu email" required>
+                <textarea name="message" placeholder="Mensaje:" required></textarea>
+                <button type="submit" onclick="submitForm()">Enviar</button>
+            </form>
         </section>
     </main>
 
