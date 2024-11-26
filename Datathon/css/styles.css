@@ -161,14 +161,11 @@ button {
 }
 
 button:hover {
-    background-color: #002299; /* Darker blue */
+    background-color: #002299; 
 }
-
-
-
-
-
-
+.footer a:visited {
+    color: #ffffff; 
+}
 /* New styles inspired by the poster */
 .section-highlight {
     background-color: #0033CC; /* Dark blue */
@@ -289,4 +286,4 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem 0;
-}
+}/* Testimonios section styling */
