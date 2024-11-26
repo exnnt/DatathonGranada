@@ -9,10 +9,15 @@ body {
 }
 
 h1, h2, h3 {
+    
     font-weight: bold;
     color: #0033CC; /* Dark blue for headings */
 }
 
+#faq h1{
+    padding-top: 40px;
+    font-size: 2.5rem; 
+}
 p {
     font-size: 1.1rem;
     color: #333333; /* Dark gray for text */
@@ -22,7 +27,7 @@ p {
 header {
     background-color: #0033CC; /* Dark blue */
     color: #FFFFFF; /* White text */
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,16 +58,16 @@ header {
 }
 
 .nav-links a:hover {
-    color: #FF0000; /* Red on hover */
+    color: #000000; /* Red on hover */ 
 }
 
-/* Hero section */
+
 .hero {
-    background-color: #333333; /* Dark gray */
+    background-color: #333333; 
     color: #FFFFFF;
     text-align: center;
-    padding: 3rem 2rem; /* Reduced padding */
-    margin-top: 80px; /* Adjusted for fixed header */
+    padding: 3rem 2rem; 
+    margin-top: 80px; 
 }
 
 .hero h1 {
