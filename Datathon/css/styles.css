@@ -286,4 +286,61 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem 0;
-}/* Testimonios section styling */
+}
+/* Estilos generales para la sección "¿Qué ofrecemos?" */
+#que-ofrecemos {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #F4F4F4; /* Fondo gris claro */
+}
+
+#que-ofrecemos h2 {
+    font-size: 2.8rem;
+    color: #0033CC; /* Título en azul oscuro */
+    margin-bottom: 2rem;
+}
+
+/* Contenedor para las listas */
+.listas {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem; /* Espacio entre las dos listas */
+    max-width: 1200px; /* Máxima anchura para que no se estire demasiado */
+    margin: 0 auto; /* Centrado */
+}
+
+/* Estilo para las listas individuales */
+.lista {
+    flex: 1; 
+    text-align: left;
+}
+
+.lista h3 {
+    font-size: 1.8rem;
+    color: #0033CC;
+    margin-bottom: 1rem;
+}
+
+.lista ul {
+    list-style-type: disc;
+    padding-left: 0;
+}
+
+.lista ul li {
+    font-size: 1rem;
+    color: #555; /* Color gris para el texto */
+    margin-bottom: 1rem;
+}
+
+/* Responsividad: Para pantallas pequeñas, las listas se apilan */
+@media (max-width: 768px) {
+    .listas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lista {
+        max-width: 90%; /* Reducir el ancho de las listas */
+    }
+}
